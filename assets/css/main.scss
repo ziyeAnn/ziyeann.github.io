@@ -1,11 +1,10 @@
+
 ---
 ---
 
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * Main stylesheet for Academic Pages
+ * Custom academic design for Jiayu Fang
  */
 
 @import
@@ -17,7 +16,7 @@
 
     "include/mixins",
     "vendor/susy/susy",
-    "custom";
+
     "layout/reset",
     "layout/base",
 
@@ -34,5 +33,6 @@
 
     "layout/page",
     "layout/archive",
-    "layout/sidebar"
-;
+    "layout/sidebar",
+
+    "custom";
