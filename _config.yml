@@ -21,7 +21,7 @@ repository               : "ziyeAnn/ziyeAnn.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Jiayu Fang"
   pronouns         :
   bio              : "Lecturer | AI in Education | Educational Technology"
@@ -55,7 +55,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : 
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
