@@ -1,0 +1,198 @@
+
+/* ==========================================
+   Jiayu Fang | Academic Website
+   Elegant Academic Design
+   ========================================== */
+
+/* 1. Color palette */
+:root {
+  --academic-bg: #fbfbf9;
+  --academic-white: #ffffff;
+  --academic-navy: #203b56;
+  --academic-text: #344252;
+  --academic-muted: #788493;
+  --academic-accent: #a34c5b;
+  --academic-border: #e5e8ec;
+}
+
+/* 2. Global layout */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--academic-bg) !important;
+  color: var(--academic-text);
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+/* 3. Main navigation */
+.masthead {
+  background: rgba(255, 255, 255, 0.97) !important;
+  border-bottom: 1px solid var(--academic-border);
+}
+
+.masthead__inner-wrap {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.greedy-nav {
+  background: transparent !important;
+}
+
+.greedy-nav a {
+  color: var(--academic-navy) !important;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.greedy-nav a:hover {
+  color: var(--academic-accent) !important;
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* 4. Main content */
+#main {
+  background: transparent;
+}
+
+.page {
+  padding-top: 2em;
+}
+
+.page__content {
+  font-size: 0.92em;
+  color: var(--academic-text);
+  line-height: 1.9;
+}
+
+.page__title {
+  color: var(--academic-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.2em;
+}
+
+/* 5. Academic headings */
+.page__content h2 {
+  color: var(--academic-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.9em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--academic-border);
+}
+
+.page__content h3 {
+  color: var(--academic-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* 6. Links */
+.page__content a {
+  color: #365f82;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.page__content a:hover {
+  color: var(--academic-accent);
+  border-bottom-color: var(--academic-accent);
+}
+
+/* 7. Lists */
+.page__content ul {
+  padding-left: 1.5em;
+}
+
+.page__content li {
+  margin-bottom: 0.45em;
+}
+
+/* 8. Profile sidebar */
+.author__content {
+  color: var(--academic-text);
+}
+
+.author__name {
+  color: var(--academic-navy) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.author__bio {
+  color: var(--academic-muted);
+  line-height: 1.7;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 3px 15px rgba(32, 59, 86, 0.10);
+}
+
+/* 9. Publication cards */
+.archive__item {
+  background: var(--academic-white);
+  border: 1px solid var(--academic-border);
+  border-radius: 9px;
+  padding: 1.3em 1.5em;
+  margin-bottom: 1.3em;
+  transition: box-shadow 0.25s ease,
+              transform 0.25s ease;
+}
+
+.archive__item:hover {
+  box-shadow: 0 8px 25px rgba(32, 59, 86, 0.07);
+  transform: translateY(-2px);
+}
+
+.archive__item-title {
+  color: var(--academic-navy);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* 10. Footer */
+.page__footer {
+  background: #f2f3f4 !important;
+  color: var(--academic-muted) !important;
+  border-top: 1px solid var(--academic-border);
+}
+
+.page__footer a {
+  color: var(--academic-navy) !important;
+}
+
+/* 11. Responsive design */
+@media screen and (max-width: 768px) {
+  .page {
+    padding-top: 1em;
+  }
+
+  .page__title {
+    font-size: 1.7em;
+  }
+
+  .page__content h2 {
+    font-size: 1.35em;
+  }
+
+  .archive__item {
+    padding: 1em;
+  }
+}
