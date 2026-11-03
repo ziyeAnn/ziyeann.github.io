@@ -13,9 +13,9 @@ title                    : "Jiayu Fang | Academic Website"
 title_separator          : "-"
 name                     : &name "Jiayu Fang"
 description              : &description "Academic profile and research portfolio of Jiayu Fang."
-url                      : "https://ziyann.github.io"
+url                      : "https://ziyeann.github.io"
 baseurl                  : ""
-repository               : "ziyeAnn/ziyann.github.io"
+repository               : "ziyeAnn/ziyeann.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
