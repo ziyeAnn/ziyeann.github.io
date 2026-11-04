@@ -2,7 +2,7 @@
 ---
 title: "An Underwater Marine Fish Object Detection Algorithm Integrating Transformer and ASFF"
 collection: publications
-category: journal-articles
+category: manuscripts
 permalink: /publication/2026-05-underwater-fish-detection
 excerpt: 'Fourth author.'
 date: 2026-05-01
