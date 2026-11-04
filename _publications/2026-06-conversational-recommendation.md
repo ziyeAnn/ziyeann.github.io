@@ -2,7 +2,7 @@
 ---
 title: "A Conversational Recommendation System Enhanced by Multi-Source Influencing Factors"
 collection: publications
-category: journal-articles
+category: manuscripts
 permalink: /publication/2026-06-conversational-recommendation
 excerpt: 'Third author.'
 date: 2026-06-01
