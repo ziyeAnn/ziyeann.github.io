@@ -1,4 +1,3 @@
-
 ---
 layout: archive
 title: "Publications"
@@ -6,32 +5,31 @@ permalink: /publications/
 author_profile: true
 ---
 
-## Research
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
 
-My research interests include Artificial Intelligence in Education, Educational Technology, Human-AI Interaction, and Intelligent Learning Systems. My work focuses on exploring how large language models and intelligent agents can support personalized learning, adaptive instruction, and educational innovation.
+{% include base_path %}
 
-My current research focuses on **Controllable Programming Tutoring with Belief-Based Pedagogical Planning**, investigating belief-based learner modeling, pedagogical decision-making, and teacher-guided constraints for adaptive and personalized programming instruction.
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
 
-### Selected Publications
 
-1. **Research on the Application of Artificial Intelligence Technologies in College Students' Mental Health**\
-   **Jiayu Fang**\
-   *Computer Knowledge and Technology*, 22(24), 15–18, 2026 · In Chinese\
-   [**DOI**](https://doi.org/10.14004/j.cnki.ckt.2026.1159)
-
-2. **A Conversational Recommendation System Enhanced by Multi-Source Influencing Factors**\
-   Third Author\
-   *Computer Era*, Issue 06, 2026 · In Chinese\
-   [**DOI**](https://doi.org/10.16644/j.cnki.cn33-1094/tp.2026.06.006)
-
-3. **An Underwater Marine Fish Object Detection Algorithm Integrating Transformer and ASFF**\
-   Fourth Author\
-   *Computer Era*, Issue 05, 2026, 29–34 · In Chinese\
-   [**DOI**](https://doi.org/10.16644/j.cnki.cn33-1094/tp.2026.05.005)
-
-### Manuscript
-
-4. **Controllable Programming Tutoring with Belief-Based Pedagogical Planning**\
-   **Jiayu Fang**\
-   October 2026 · Manuscript transfer to *Journal of Computer Assisted Learning* initiated\
-   [**View Preprint**](https://drive.google.com/file/d/1iEJReSZ_DtebBcmGCuIOOq1uTaDLE__o/view?usp=sharing)
