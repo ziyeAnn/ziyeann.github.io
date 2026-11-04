@@ -1,3 +1,4 @@
+
 ---
 layout: archive
 title: "Publications"
@@ -6,30 +7,89 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">
+    You can also find my articles on
+    <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+  </div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<h2>Journal Articles</h2>
+<hr />
 
+<ol>
 
+  <li>
+    <strong>
+      Research on the Application of Artificial Intelligence Technologies
+      in College Students' Mental Health
+    </strong>
+    <br />
+    <em>Computer Knowledge and Technology</em> (in Chinese),
+    2026, 22(24): 15–18.
+    <br />
+    Sole author.
+    <br />
+    <a href="https://doi.org/10.14004/j.cnki.ckt.2026.1159"
+       target="_blank" rel="noopener noreferrer">[DOI]</a>
+  </li>
+
+  <br />
+
+  <li>
+    <strong>
+      A Conversational Recommendation System Enhanced by Multi-Source
+      Influencing Factors
+    </strong>
+    <br />
+    <em>Computer Era</em> (in Chinese),
+    2026, (06): 28–32.
+    <br />
+    Third author.
+    <br />
+    <a href="https://doi.org/10.16644/j.cnki.cn33-1094/tp.2026.06.006"
+       target="_blank" rel="noopener noreferrer">[DOI]</a>
+  </li>
+
+  <br />
+
+  <li>
+    <strong>
+      An Underwater Marine Fish Object Detection Algorithm Integrating
+      Transformer and ASFF
+    </strong>
+    <br />
+    <em>Computer Era</em> (in Chinese),
+    2026, (05): 29–34.
+    <br />
+    Fourth author.
+    <br />
+    <a href="https://doi.org/10.16644/j.cnki.cn33-1094/tp.2026.05.005"
+       target="_blank" rel="noopener noreferrer">[DOI]</a>
+  </li>
+
+</ol>
+
+<h2>Preprints and Manuscripts</h2>
+<hr />
+
+<ol>
+
+  <li>
+    <strong>
+      Controllable Programming Tutoring with Belief-Based Pedagogical Planning
+    </strong>
+    <br />
+    October 2026.
+    <br />
+    First author.
+    <br />
+    Manuscript transfer to
+    <em>Journal of Computer Assisted Learning</em> initiated.
+    <br />
+    <a href="https://drive.google.com/file/d/1iEJReSZ_DtebBcmGCuIOOq1uTaDLE__o/view?usp=sharing"
+       target="_blank" rel="noopener noreferrer">[Preprint]</a>
+  </li>
+
+</ol>
