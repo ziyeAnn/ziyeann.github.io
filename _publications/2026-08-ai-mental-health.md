@@ -3,8 +3,9 @@
 title: "Research on the Application of Artificial Intelligence Technologies in College Students' Mental Health"
 collection: publications
 category: journal-articles
-venue: "Computer Knowledge and Technology (in Chinese)"
+permalink: /publication/2026-08-ai-mental-health
+excerpt: "Sole author. Research on college students' mental health using artificial intelligence technologies."
+date: 2026-08-01
+venue: "Computer Knowledge and Technology (in Chinese), 2026, 22(24): 15--18."
 paperurl: "https://doi.org/10.14004/j.cnki.ckt.2026.1159"
-excerpt: "Sole author. 2026, 22(24): 15–18."
 ---
-
