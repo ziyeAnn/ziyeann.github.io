@@ -1,4 +1,3 @@
-
 ---
 title: "Controllable Programming Tutoring with Belief-Based Pedagogical Planning"
 collection: publications
