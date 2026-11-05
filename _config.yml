@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Jiayu Fang | Academic Website"
+title                    : "Jiayu Fang"
 title_separator          : "-"
 name                     : &name "Jiayu Fang"
 description              : &description "Academic profile and research portfolio of Jiayu Fang."
@@ -64,7 +64,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "www.linkedin.com/in/jiayu-fang-579989258"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
